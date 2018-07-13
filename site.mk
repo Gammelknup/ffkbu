@@ -27,18 +27,7 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         gluon-web-private-wifi \
         gluon-ffkbu-files \
-  
-#Please use packages according the usage of fastd or wireguard.
-## Fastd
-##      gluon-config-mode-mesh-vpn \ 
-##      gluon-mesh-vpn-fastd 
-
-## Wireguard
-##      gluon-mesh-vpn-wireguard 
-
-
-
-
+        gluon-mesh-vpn-wireguard 
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ar71xx-generic)
@@ -75,8 +64,6 @@ ifeq ($(GLUON_TARGET),ramips-mt7621)
 GLUON_SITE_PACKAGES += \
 #       gluon-ssid-changer
 endif
-
-
 
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
